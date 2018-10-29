@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/my_two_spinner_container"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="vertical"
+>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:elevation="1dp">
+        <TextView
+                android:id="@+id/tv_select_action"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="#ffedcb21"
+                android:gravity="center"
+                android:text="二级列表"
+                android:textSize="16sp" />
+        <ImageView
+                android:id="@+id/iv_select_action_arrow"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignRight="@id/tv_select_action"
+                   android:layout_centerVertical="true"
+                   android:src="@android:drawable/ic_media_play"
+        />
+    </RelativeLayout>
+
+
+        <LinearLayout
+                android:id="@+id/ll_spinner_container"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:translationY="-300dp"
+                android:orientation="horizontal" >
+
+            <ListView
+                    android:id="@+id/main_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="#FFF"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#FFF"
+                    android:dividerHeight="1px"
+                    android:fastScrollEnabled="true"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none" >
+            </ListView>
+
+            <ListView
+                    android:id="@+id/more_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="17"
+                    android:background="#fff"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#ffebebeb"
+                    android:dividerHeight="0.5px"
+                    android:fastScrollEnabled="true"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+</LinearLayout>
